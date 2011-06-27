@@ -1,3 +1,5 @@
+# taken from Splinter source code
+
 from flask import Flask
 from flask import request
 from multiprocessing import Process
