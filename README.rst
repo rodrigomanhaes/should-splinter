@@ -21,6 +21,14 @@ Ensures that page includes the given text::
     >>> browser |should_not| include_text('unexisting')
 
 
+how to install
+~~~~~~~~~~~~~~
+
+There's no Pypi packages at the moment, but you can install directly from Github::
+
+    pip install -U https://github.com/rodrigomanhaes/should-web/tarball/master
+
+
 should-web?
 ~~~~~~~~~~~
 
