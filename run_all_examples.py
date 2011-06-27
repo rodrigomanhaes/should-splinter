@@ -18,13 +18,16 @@ def test_suite():
 
     suite = unittest.TestSuite()
 
+    globs = {'browser': browser, 'should': should, 'should_not': should_not}
+
+    suite.addTest(doctest.DocFileSuite('README.rst', optionflags=flags,
+                                       globs=globs))
+
     for doctest_file in os.listdir(doctests_path):
         if doctest_file.endswith('.txt'):
             suite.addTest(doctest.DocFileSuite(os.path.join(doctests_path,
                                                             doctest_file),
-                                               globs={'browser': browser,
-                                                      'should': should,
-                                                      'should_not': should_not},
+                                               globs=globs,
                                                optionflags=flags))
     return suite
 
@@ -43,3 +46,4 @@ if __name__ == '__main__':
     result = runner.run(test_suite())
     teardown()
     sys.exit(int(bool(result.failures or result.errors)))
+
