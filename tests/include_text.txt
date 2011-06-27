@@ -1,19 +1,8 @@
->>> from unittest import TestCase
->>> from should_dsl import should, should_not, ShouldNotSatisfied
->>> from splinter.browser import Browser
->>> from tests.fake_webapp import start_server, stop_server, EXAMPLE_APP
 >>> import should_web
-
->>> start_server()
->>> browser = Browser()
->>> browser.visit(EXAMPLE_APP)
 
 >>> browser |should| include_text('Example Header')
 >>> browser |should| include_text('unexisting text')
 Traceback (most recent call last):
     ...
 ShouldNotSatisfied: <...> does not include text 'unexisting text'
-
->>> browser.quit()
->>> stop_server()
 
