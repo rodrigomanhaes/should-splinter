@@ -1,7 +1,7 @@
 should-web
 ==========
 
-Should-DSL matchers for tests/specifications using Splinter.
+Should-DSL matchers for web application tests using `Splinter <http://splinter.cobrateam.info>`_ framework.
 
 
 For using the matchers, you should import::
@@ -15,8 +15,14 @@ In the following examples, ``browser`` is an instance of the
 include_text
 ------------
 
-Ensures page includes the given text::
+Ensures that page includes the given text::
 
     >>> browser |should| include_text('Example')
     >>> browser |should_not| include_text('unexisting')
+
+
+should-web?
+~~~~~~~~~~~
+
+Yes, the name is ugly. If you have a better one, let me know.
 
