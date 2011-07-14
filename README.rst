@@ -1,12 +1,12 @@
-should-web
-==========
+should-splinter
+===============
 
 Should-DSL matchers for web application tests using `Splinter <http://splinter.cobrateam.info>`_ framework.
 
 
 For using the matchers, you should import::
 
-    >>> import should_web
+    >>> import should_splinter
 
 
 In the following examples, ``browser`` is an instance of the
@@ -26,11 +26,5 @@ how to install
 
 There's no Pypi packages at the moment, but you can install directly from Github::
 
-    pip install -U https://github.com/rodrigomanhaes/should-web/tarball/master
-
-
-should-web?
-~~~~~~~~~~~
-
-Yes, the name is ugly. If you have a better one, let me know.
+    pip install -U https://github.com/rodrigomanhaes/should-splinter/tarball/master
 

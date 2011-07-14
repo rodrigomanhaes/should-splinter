@@ -1,4 +1,4 @@
->>> import should_web
+>>> import should_splinter
 
 >>> browser |should| include_text('Example Header')
 >>> browser |should| include_text('unexisting text')
