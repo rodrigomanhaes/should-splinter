@@ -7,15 +7,15 @@ def include_text():
 
 @matcher
 def include_id():
-    return (lambda browser, id: browser.find_by_id(id),
+    return (lambda browser, id: browser.is_element_present_by_id(id),
             '%r does %sinclude id %r')
 
 @matcher
 def include_tag():
-    return (lambda browser, tag: browser.find_by_tag(tag),
+    return (lambda browser, tag: browser.is_element_present_by_tag(tag),
             '%r does %sinclude tag %r')
 
 @matcher
 def include_name():
-    return (lambda browser, name: browser.find_by_name(name),
+    return (lambda browser, name: browser.is_element_present_by_name(name),
             '%r does %sinclude name %r')
