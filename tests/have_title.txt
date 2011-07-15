@@ -1,0 +1,7 @@
+>>> import should_splinter
+
+>>> browser |should| have_title('Example Title')
+>>> browser |should| have_title('unexistingtitle')
+Traceback (most recent call last):
+    ...
+ShouldNotSatisfied: <...> does not include title 'unexistingtitle'
