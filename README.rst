@@ -36,6 +36,14 @@ Ensures that page includes the given tag::
     >>> browser |should| include_tag('h1')
     >>> browser |should_not| include_tag('h9')
 
+include_name
+------------
+
+Ensures that page includes the given tag::
+
+    >>> browser |should| include_name('header')
+    >>> browser |should_not| include_tag('unexisting')
+
 
 how to install
 ~~~~~~~~~~~~~~
