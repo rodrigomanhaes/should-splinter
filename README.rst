@@ -39,10 +39,18 @@ Ensures that page includes the given tag::
 include_name
 ------------
 
-Ensures that page includes the given tag::
+Ensures that page includes the given name::
 
     >>> browser |should| include_name('header')
-    >>> browser |should_not| include_tag('unexisting')
+    >>> browser |should_not| include_name('unexisting')
+
+include_css
+-----------
+
+Ensures that page includes the given css::
+
+    >>> browser |should| include_css'title')
+    >>> browser |should_not| include_css('unexisting')
 
 
 how to install
