@@ -1,0 +1,7 @@
+>>> import should_splinter
+
+>>> browser |should| include_css('title')
+>>> browser |should| include_css('unexistingtag')
+Traceback (most recent call last):
+    ...
+ShouldNotSatisfied: <...> does not include name 'unexistingtag'

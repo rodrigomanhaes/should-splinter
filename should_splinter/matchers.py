@@ -19,3 +19,8 @@ def include_tag():
 def include_name():
     return (lambda browser, name: browser.is_element_present_by_name(name),
             '%r does %sinclude name %r')
+
+@matcher
+def include_css():
+    return (lambda browser, css_tag: browser.is_element_present_by_css(css_tag),
+            '%r does %sinclude name %r')
