@@ -1,0 +1,7 @@
+>>> import should_splinter
+
+>>> browser |should| include_id('firstheader')
+>>> browser |should| include_id('unexistingheader')
+Traceback (most recent call last):
+    ...
+ShouldNotSatisfied: <...> does not include id 'unexistingheader'
