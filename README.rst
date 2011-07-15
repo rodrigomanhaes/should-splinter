@@ -20,6 +20,13 @@ Ensures that page includes the given text::
     >>> browser |should| include_text('Example')
     >>> browser |should_not| include_text('unexisting')
 
+include_id
+----------
+
+Ensures that page includes the given id::
+
+    >>> browser |should| include_id('firstheader')
+    >>> browser |should_not| include_id('unexisting')
 
 how to install
 ~~~~~~~~~~~~~~
