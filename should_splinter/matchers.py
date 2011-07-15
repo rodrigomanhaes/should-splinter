@@ -9,3 +9,8 @@ def include_text():
 def include_id():
     return (lambda browser, id: browser.find_by_id(id),
             '%r does %sinclude id %r')
+
+@matcher
+def include_tag():
+    return (lambda browser, tag: browser.find_by_tag(tag),
+            '%r does %sinclude tag %r')

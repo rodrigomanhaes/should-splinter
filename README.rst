@@ -28,6 +28,15 @@ Ensures that page includes the given id::
     >>> browser |should| include_id('firstheader')
     >>> browser |should_not| include_id('unexisting')
 
+include_tag
+----------
+
+Ensures that page includes the given tag::
+
+    >>> browser |should| include_tag('h1')
+    >>> browser |should_not| include_tag('h9')
+
+
 how to install
 ~~~~~~~~~~~~~~
 

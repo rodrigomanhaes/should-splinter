@@ -1,0 +1,7 @@
+>>> import should_splinter
+
+>>> browser |should| include_tag('h1')
+>>> browser |should| include_tag('h9')
+Traceback (most recent call last):
+    ...
+ShouldNotSatisfied: <...> does not include tag 'h9'
