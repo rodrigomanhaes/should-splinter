@@ -14,3 +14,8 @@ def include_id():
 def include_tag():
     return (lambda browser, tag: browser.find_by_tag(tag),
             '%r does %sinclude tag %r')
+
+@matcher
+def include_name():
+    return (lambda browser, name: browser.find_by_name(name),
+            '%r does %sinclude name %r')

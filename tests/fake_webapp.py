@@ -13,7 +13,7 @@ EXAMPLE_HTML = """\
     <title>Example Title</title>
   </head>
   <body>
-    <h1 id="firstheader">Example Header</h1>
+    <h1 id="firstheader" name="header">Example Header</h1>
   </body>
 </html>"""
 

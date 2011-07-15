@@ -1,0 +1,7 @@
+>>> import should_splinter
+
+>>> browser |should| include_name('header')
+>>> browser |should| include_name('unexistingname')
+Traceback (most recent call last):
+    ...
+ShouldNotSatisfied: <...> does not include name 'unexistingname'
