@@ -52,6 +52,14 @@ Ensures that page includes the given css::
     >>> browser |should| include_css('title')
     >>> browser |should_not| include_css('unexisting')
 
+include_title
+-------------
+
+Ensures that page includes the given title::
+
+    >>> browser |should| have_title('Example Title')
+    >>> browser |should_not| have_title('unexisting')
+
 
 how to install
 ~~~~~~~~~~~~~~
