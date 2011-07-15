@@ -49,7 +49,7 @@ include_css
 
 Ensures that page includes the given css::
 
-    >>> browser |should| include_css'title')
+    >>> browser |should| include_css('title')
     >>> browser |should_not| include_css('unexisting')
 
 
