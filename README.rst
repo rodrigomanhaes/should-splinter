@@ -60,6 +60,14 @@ Ensures that page includes the given title::
     >>> browser |should| have_title('Example Title')
     >>> browser |should_not| have_title('unexisting')
 
+be_in_url
+---------
+
+Ensures that page is in the given url::
+
+    >>> browser |should| be_in_url('http://localhost:5000/')
+    >>> browser |should_not| be_in_url('unexisting')
+
 
 how to install
 ~~~~~~~~~~~~~~
