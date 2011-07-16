@@ -29,3 +29,8 @@ def include_css():
 def have_title():
     return (lambda browser, title: title == browser.title,
             '%r does %sinclude title %r')
+
+@matcher
+def be_in_url():
+    return (lambda browser, url: url == browser.url,
+        '%r is %sin url  %r')

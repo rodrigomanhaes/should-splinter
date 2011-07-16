@@ -1,0 +1,7 @@
+>>> import should_splinter
+
+>>> browser |should| be_in_url('http://localhost:5000/')
+>>> browser |should| be_in_url('unexistingurl')
+Traceback (most recent call last):
+    ...
+ShouldNotSatisfied: <...> is not in url 'unexistingurl'
