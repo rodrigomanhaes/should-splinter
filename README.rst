@@ -68,6 +68,14 @@ Ensures that page is in the given url::
     >>> browser |should| be_in_url('http://localhost:5000/')
     >>> browser |should_not| be_in_url('unexisting')
 
+have_status_code
+----------------
+
+Ensures that page have the given status code::
+
+    >>> browser |should| have_status_code(200)
+    >>> browser |should_not| have_status_code(404)
+
 
 how to install
 ~~~~~~~~~~~~~~
