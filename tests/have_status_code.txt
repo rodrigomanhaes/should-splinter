@@ -1,0 +1,7 @@
+>>> import should_splinter
+
+>>> browser |should| have_status_code(200)
+>>> browser |should| have_status_code(404)
+Traceback (most recent call last):
+    ...
+ShouldNotSatisfied: <...> does not have status code 404

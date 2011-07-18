@@ -33,4 +33,9 @@ def have_title():
 @matcher
 def be_in_url():
     return (lambda browser, url: url == browser.url,
-        '%r is %sin url  %r')
+            '%r is %sin url  %r')
+
+@matcher
+def have_status_code():
+    return (lambda browser, code: code == browser.status_code,
+            '%r does %shave status code %r')
