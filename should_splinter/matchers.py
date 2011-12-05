@@ -23,7 +23,7 @@ def include_name():
 @matcher
 def include_css():
     return (lambda browser, css_tag: browser.is_element_present_by_css(css_tag),
-            '%r does %sinclude name %r')
+            '%r does %sinclude css element %r')
 
 @matcher
 def have_title():
