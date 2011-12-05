@@ -60,6 +60,14 @@ Ensures that page includes the given title::
     >>> browser |should| have_title('Example Title')
     >>> browser |should_not| have_title('unexisting')
 
+include_value
+-------------
+
+Ensures that page includes the given value::
+
+    >>> browser |should| include_value('div_value')
+    >>> browser |should_not| include_value('unexisting')
+
 be_in_url
 ---------
 

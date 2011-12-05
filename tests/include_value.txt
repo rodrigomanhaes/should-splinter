@@ -1,7 +1,7 @@
 >>> import should_splinter
 
 >>> browser |should| include_value('div_value')
->>> browser |should| include_name('unexistingvalue')
+>>> browser |should| include_value('unexistingvalue')
 Traceback (most recent call last):
     ...
-ShouldNotSatisfied: <...> does not include name 'unexistingvalue'
+ShouldNotSatisfied: <...> does not include value 'unexistingvalue'
