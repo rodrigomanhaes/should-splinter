@@ -21,9 +21,14 @@ def include_name():
             '%r does %sinclude name %r')
 
 @matcher
+def include_value():
+    return (lambda browser, value: browser.is_element_present_by_value(value),
+            '%r does %sinclude value %r')
+
+@matcher
 def include_css():
     return (lambda browser, css_tag: browser.is_element_present_by_css(css_tag),
-            '%r does %sinclude name %r')
+            '%r does %sinclude css element %r')
 
 @matcher
 def have_title():

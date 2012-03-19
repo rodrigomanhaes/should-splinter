@@ -14,6 +14,7 @@ EXAMPLE_HTML = """\
   </head>
   <body>
     <h1 id="firstheader" name="header">Example Header</h1>
+    <div value="div_value"> Inside a Div </div>
   </body>
 </html>"""
 
